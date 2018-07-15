@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Titles : MonoBehaviour {
 
     public bool Use = false;
@@ -58,6 +58,7 @@ public class Titles : MonoBehaviour {
                 if (texIndex >= Logos.Count)
                 {
                     done = true;
+                    SceneManager.LoadScene(1);   
                 }
                 else
                 {

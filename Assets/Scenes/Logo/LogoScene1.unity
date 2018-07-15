@@ -211,8 +211,8 @@ Camera:
   m_GameObject: {fileID: 534669902}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.11044855, g: 0.19223426, b: 0.3207547, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -256,6 +256,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1305411994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1305411996}
+  - component: {fileID: 1305411995}
+  m_Layer: 0
+  m_Name: NewTitles1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1305411995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305411994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891f3015f230f3343903255b1d71b433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Use: 1
+  TitleTrack: {fileID: 8300000, guid: 835ca238ba943e141b9592bdf0d10be5, type: 3}
+  TitleSource: {fileID: 0}
+  Logos:
+  - {fileID: 2800000, guid: 797898f0be2d65b43bb52b346de690a7, type: 3}
+  - {fileID: 2800000, guid: 92eb739f035c0504282e1d7a092122c6, type: 3}
+  - {fileID: 2800000, guid: 890172f9a94443f4eb6df735b878f831, type: 3}
+  curTex: {fileID: 0}
+  texIndex: 0
+  texAlpha: 0
+  texIn: 0
+  texOut: 0
+  texWait: 1
+  done: 0
+--- !u!4 &1305411996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305411994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440545667
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,6 +340,14 @@ MonoBehaviour:
   Use: 0
   TitleTrack: {fileID: 0}
   TitleSource: {fileID: 0}
+  Logos: []
+  curTex: {fileID: 0}
+  texIndex: 0
+  texAlpha: 0
+  texIn: 0
+  texOut: 0
+  texWait: 1
+  done: 0
 --- !u!4 &1440545669
 Transform:
   m_ObjectHideFlags: 0
@@ -339,5 +401,5 @@ Transform:
   m_Children:
   - {fileID: 1440545669}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
