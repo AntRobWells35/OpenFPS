@@ -8,6 +8,7 @@ public class GameGlobals : MonoBehaviour {
     public static GameGlobals StatGlobal;
 
     public Titles TitlesBase;
+    public CampaignInfo CamInfoBase;
 
     private void Awake()
     {
