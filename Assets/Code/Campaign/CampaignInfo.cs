@@ -5,7 +5,7 @@ using UnityEngine;
 public class CampaignInfo : MonoBehaviour {
 
     public string CamName = "New Campaign";
-    public Texture CamImage;
+    public Sprite CamImage;
     public string CamInfo;
     public string Author;
     public string CopyRight;

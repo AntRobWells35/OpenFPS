@@ -48,7 +48,7 @@ public class CampaignInfoEditor : EditorWindow {
 
         GUILayout.Label("Campaign Image");
 
-        CurCam.CamImage = EditorGUILayout.ObjectField(CurCam.CamImage,typeof(Texture),true) as Texture;
+        CurCam.CamImage = EditorGUILayout.ObjectField(CurCam.CamImage, typeof(Sprite), true) as Sprite;
         
         GUILayout.EndHorizontal();
 
