@@ -7,7 +7,7 @@ public class CampaignInfoEditor : EditorWindow {
 
     CampaignInfo CurCam;
 
-    [MenuItem("OpenFPS/Campaign Info Editor")]
+    [MenuItem("OpenFPS/Game/Campaign Info Editor")]
     public static void ShowWindow()
     {
         EditorWindow.GetWindow(typeof(CampaignInfoEditor));

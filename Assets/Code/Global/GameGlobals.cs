@@ -9,6 +9,8 @@ public class GameGlobals : MonoBehaviour {
 
     public Titles TitlesBase;
     public CampaignInfo CamInfoBase;
+    public GameMenu GameMenuBase;
+    public GameMenuItem MenuItemBase;
 
     private void Awake()
     {

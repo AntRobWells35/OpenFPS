@@ -8,7 +8,7 @@ public class TitlesEditor : EditorWindow {
     Titles TitlesObj;
     Texture curTex;
 
-    [MenuItem("OpenFPS/Titles Editor")]
+    [MenuItem("OpenFPS/Presentation/Titles Editor")]
     public static void ShowWindow()
     {
         EditorWindow.GetWindow(typeof(TitlesEditor));
