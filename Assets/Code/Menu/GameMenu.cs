@@ -25,6 +25,7 @@ public class GameMenu : MonoBehaviour {
             if(GUI.Button(new Rect(Screen.width / 2 - 100, y, 200, 30), mi.Text))
             {
                 SceneManager.LoadScene(mi.Scene);
+                
             }
             y = y + 35;
 

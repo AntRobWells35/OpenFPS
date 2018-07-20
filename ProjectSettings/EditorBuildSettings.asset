@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Campaigns/NegativePlus/NegativePlusStart.unity
     guid: 43f2dec5e733fcb44b061004d0845dc4
+  - enabled: 1
+    path: Assets/Scenes/Campaigns/NegativePlus/GameScene/TestMap1/NegativePlusTestMap1.unity
+    guid: 3ea6f9a3c06203f46a7d04c1d1066b78
   m_configObjects: {}
