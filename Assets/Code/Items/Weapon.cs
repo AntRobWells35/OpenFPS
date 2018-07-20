@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class Weapon : ItemBase {
 
+    public ProjectileType ProjT = ProjectileType.Direct;
     public ShotType ShotT = ShotType.Multi;
     public float ShotInterval = 0.15f;
 
+    public Transform MuzzleBase;
+    public Transform ProjBase;
+
     public AudioClip ShotAudio;
     public AudioSource MuzzleSource;
+
+    public WeaponManager WeaponMan;
 
     private bool ShotIn = false;
     private float NextShot = 0;
@@ -61,6 +67,21 @@ public class Weapon : ItemBase {
     {
         MuzzleSource.clip = ShotAudio;
         MuzzleSource.Play();
+        switch (ProjT)
+        {
+            case ProjectileType.Direct:
+
+                var np = GameObject.Instantiate<GameObject>(ProjBase.gameObject) as GameObject;
+                np.transform.position = MuzzleBase.transform.position;
+                np.transform.rotation = MuzzleBase.transform.rotation;
+                var wp = new WeaponProjectile();
+                wp.Speed = 5.0f;
+                wp.Projectile = np.transform;
+                WeaponMan.Projectiles.Add(wp);
+
+
+                break;
+        }
         Debug.Log("Shot!");
     }
 
@@ -69,4 +90,9 @@ public class Weapon : ItemBase {
 public enum ShotType
 {
     Single,Multi
+}
+
+public enum ProjectileType
+{
+    Instant,Direct,Physical
 }
